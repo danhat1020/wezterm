@@ -23,7 +23,7 @@ config.default_cwd = "/home/slick"
 
 -- fonts
 config.adjust_window_size_when_changing_font_size = false
-config.font = wezterm.font("Iosevka Nerd Font", { weight = "Regular" })
+config.font = wezterm.font("IosevkaTerm Slab Nerd Font", { weight = "Regular" })
 config.font_size = 17
 config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 config.bold_brightens_ansi_colors = "No"
