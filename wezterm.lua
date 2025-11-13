@@ -20,18 +20,21 @@ config.default_cwd = "/home/slick"
 local fonts = {
 	{
 		name = "IosevkaTerm",
+		size = 17,
 		width = 1.0,
 		height = 1.0,
 	},
 	{
 		name = "IosevkaTerm Slab",
+		size = 17,
 		width = 1.0,
 		height = 1.0,
 	},
 	{
 		name = "GoMono",
+		size = 16,
 		width = 0.9,
-		height = 1.1,
+		height = 1.15,
 	},
 }
 local current_font = 1
@@ -40,6 +43,7 @@ wezterm.on("toggle-font", function(window, pane)
 	local f = fonts[current_font]
 	window:set_config_overrides({
 		font = wezterm.font(f.name .. "Nerd Font"),
+		font_size = f.size,
 		cell_width = f.width,
 		line_height = f.height,
 	})
@@ -47,7 +51,7 @@ end)
 config.font = wezterm.font(fonts[current_font].name .. " Nerd Font")
 config.cell_width = fonts[current_font].width
 config.line_height = fonts[current_font].height
-config.font_size = 17
+config.font_size = fonts[current_font].size
 config.adjust_window_size_when_changing_font_size = false
 config.bold_brightens_ansi_colors = "No"
 config.freetype_load_target = "Normal"
