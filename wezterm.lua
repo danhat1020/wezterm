@@ -30,6 +30,12 @@ local fonts = {
 		width = 1.0,
 		height = 1.0,
 	},
+	{
+		name = "FiraCode",
+		size = 16,
+		width = 0.9,
+		height = 1.1,
+	},
 }
 local current_font = 1
 wezterm.on("toggle-font", function(window, pane)
