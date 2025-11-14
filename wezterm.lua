@@ -36,13 +36,13 @@ wezterm.on("toggle-font", function(window, pane)
 	current_font = (current_font % #fonts) + 1
 	local f = fonts[current_font]
 	window:set_config_overrides({
-		font = wezterm.font(f.name .. "Nerd Font"),
+		font = wezterm.font(f.name .. "Nerd Font Mono"),
 		font_size = f.size,
 		cell_width = f.width,
 		line_height = f.height,
 	})
 end)
-config.font = wezterm.font(fonts[current_font].name .. " Nerd Font")
+config.font = wezterm.font(fonts[current_font].name .. " Nerd Font Mono")
 config.cell_width = fonts[current_font].width
 config.line_height = fonts[current_font].height
 config.font_size = fonts[current_font].size
