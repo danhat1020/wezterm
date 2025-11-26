@@ -19,6 +19,18 @@ config.default_cwd = "/home/slick"
 -- fonts
 local fonts = {
 	{
+		name = "FiraCode",
+		size = 16,
+		width = 0.9,
+		height = 1.1,
+	},
+	{
+		name = "JetBrains Mono",
+		size = 16,
+		width = 0.9,
+		height = 1.0,
+	},
+	{
 		name = "GoMono",
 		size = 16,
 		width = 0.9,
@@ -29,12 +41,6 @@ local fonts = {
 		size = 17,
 		width = 1.0,
 		height = 1.0,
-	},
-	{
-		name = "FiraCode",
-		size = 16,
-		width = 0.9,
-		height = 1.1,
 	},
 }
 local current_font = 1
